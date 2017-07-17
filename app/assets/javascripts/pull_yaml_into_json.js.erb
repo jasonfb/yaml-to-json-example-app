@@ -1,0 +1,10 @@
+//= depend_on_config 'my_configs_in.yml'
+
+ExampleApp = {};
+
+ExampleApp.MyConfigs = {
+  getConfigs: function() {
+    var mySettings = <%= YAML.load_file("config/my_configs_in.yml").to_json %>;
+    return mySettings;
+  }
+};

@@ -1,0 +1,17 @@
+<h1>
+  Example YAML-to-Json in Rails App
+</h1>
+
+<br />
+<br />
+<br />
+
+Your YAML-based configs from Rails are:
+
+<pre>
+<%= javascript_tag do %>
+
+document.write(JSON.stringify(ExampleApp.MyConfigs.getConfigs()));
+
+<% end %>
+</pre>
